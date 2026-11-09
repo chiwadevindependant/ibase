@@ -7860,10 +7860,11 @@ function youtubeEmbedUrl(url) {
     return match ? 'https://www.youtube.com/embed/' + match[1] + '?rel=0' : '';
 }
 function renderMvPlayer(group, extraClass) {
-    const embed = youtubeEmbedUrl(findMvSource(group.name));
+    const xlovAlt = (group.name === "XLOV" && typeof xlovMode !== "undefined" && xlovMode === "!");
+    const embed = youtubeEmbedUrl(xlovAlt ? "https://youtu.be/uVHBcxSt24E?si=MDbz0FuQrWB6tUR5" : findMvSource(group.name));
     if (!embed) return '';
     return "<div class='mv-player " + (extraClass || '') + "' data-mv-player>" +
-        "<h3>MV de " + group.name + "</h3>" +
+        "<h3>MV de " + group.name + (xlovAlt ? " — version !" : "") + "</h3>" +
         "<iframe class='mv-frame' src='" + embed + "' title='MV de " + group.name + "' loading='lazy' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>" +
         "<p class='mv-source-note'>Lecture intégrée au site depuis le lien MV fourni.</p>" +
     "</div>";
