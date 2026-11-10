@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ibaseasianpop.github.io/ibase/sitemap.xml
