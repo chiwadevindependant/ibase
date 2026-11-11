@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://VOTRE-PSEUDO.github.io/VOTRE-DEPOT/sitemap.xml
+Sitemap: https://ibaseasianpop.com/sitemap.xml
