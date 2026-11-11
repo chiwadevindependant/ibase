@@ -1,35 +1,23 @@
-IBASE ASIAN POP — ZIP PRÊT À PUBLIER
-====================================
+IBASE ASIAN POP — CORRECTIF POUR TON ADRESSE GITHUB PAGES
+========================================================
 
-Le ZIP contient le site allégé, ses images WebP, l’accueil, une page XLOV avec contenu visible sans JavaScript, les pages K-pop/J-pop/C-pop/T-pop, l’icône et l’image de partage, robots.txt, sitemap.xml et CNAME.
+Adresse publique : https://ibaseasianpop.github.io/ibase/
 
-DOMAINE À VÉRIFIER
-------------------
-Le domaine candidat configuré est ibaseasianpop.com. Le contrôle public RDAP du 11 novembre 2026 ne l’a pas trouvé enregistré, tandis que ibase.com est déjà enregistré. Cela ne réserve pas le domaine et ne prouve pas qu’il restera disponible au paiement. Vérifie le prix initial ET le prix de renouvellement auprès du registraire de ton choix. L’achat est séparé et n’est pas inclus dans ce ZIP.
+Pourquoi l’adresse ne fonctionnait pas
+--------------------------------------
+Le ZIP précédent contenait CNAME avec « ibaseasianpop.com ». GitHub Pages redirigeait donc vers ce domaine non enregistré. Ce fichier a été supprimé. Les liens des images et catégories ont aussi été corrigés pour le sous-dossier /ibase/.
 
-Avant de publier, assure-toi d’avoir enregistré ibaseasianpop.com. Si tu choisis un autre domaine, remplace partout « ibaseasianpop.com » dans CNAME, robots.txt, sitemap.xml, les adresses canonical/og:url et le JSON-LD de index.html, groupes/xlov.html et categories/*.html.
+Comment mettre à jour le site
+-----------------------------
+1. Télécharge ce ZIP puis décompresse-le.
+2. Dans le dépôt GitHub « ibase », remplace les anciens fichiers par TOUT le contenu décompressé (fichiers et dossiers à la racine du dépôt). Supprime aussi l’ancien CNAME s’il reste.
+3. Dans GitHub → Settings → Pages, enlève « ibaseasianpop.com » du champ Custom domain s’il est encore indiqué. Choisis « Deploy from a branch », la branche « main » et le dossier « /(root) ».
+4. Attends la fin du déploiement GitHub Pages, puis ouvre https://ibaseasianpop.github.io/ibase/ et https://ibaseasianpop.github.io/ibase/groupes/xlov.html.
 
-PUBLICATION GITHUB PAGES AVEC TON DOMAINE (PAS UNE ADRESSE github.io POUR LES VISITEURS)
----------------------------------------------------------------------------------------
-1. Décompresse le ZIP. Envoie le contenu complet à la racine d’un dépôt GitHub public. Ne place pas les fichiers dans un sous-dossier.
-2. Dans Settings → Pages, choisis la branche main et le dossier /(root). Saisis ibaseasianpop.com dans le champ Custom domain. Le fichier CNAME est déjà dans le ZIP.
-3. Dans le panneau DNS de ton registraire, ajoute les quatre enregistrements A de GitHub Pages : 185.199.108.153, 185.199.109.153, 185.199.110.153 et 185.199.111.153. Pour le sous-domaine www, ajoute un CNAME vers ton identifiant GitHub + « .github.io ». Suis les consignes officielles GitHub affichées dans Settings → Pages et active Enforce HTTPS quand disponible.
-4. Quand le site répond en HTTPS sur https://ibaseasianpop.com/, les visiteurs voient ce domaine personnalisé ; l’hébergement peut rester GitHub Pages.
-
-GOOGLE
+Google
 ------
-1. Dans Google Search Console, ajoute la propriété de domaine ibaseasianpop.com et suis la vérification DNS fournie par Google. Ajoute le TXT au panneau DNS de ton registraire.
-2. Dans Search Console → Sitemaps, soumets : https://ibaseasianpop.com/sitemap.xml
-3. Avec l’inspection d’URL, demande l’indexation de https://ibaseasianpop.com/ et https://ibaseasianpop.com/groupes/xlov.html.
-4. Vérifie ensuite que Google peut lire robots.txt et sitemap.xml.
+Le sitemap corrigé se trouve ici : https://ibaseasianpop.github.io/ibase/sitemap.xml. Dans Google Search Console, ajoute l’URL de préfixe https://ibaseasianpop.github.io/ibase/, puis soumets l’adresse complète du sitemap. Le fichier robots.txt est livré à https://ibaseasianpop.github.io/ibase/robots.txt. Avec un site de projet GitHub Pages, le fichier robots à la racine du domaine github.io appartient à l’hébergeur et n’est pas contrôlé par ce dépôt.
 
-Google choisit lui-même le titre, le nom de site et le favicon affichés. Les métadonnées, le balisage « IBASE Asian Pop » et l’icône donnent les bons signaux, mais Google ne garantit ni leur affichage exact, ni la position d’un résultat pour « XLOV », ni les liens de catégorie sous le résultat IBASE. L’indexation peut prendre plusieurs jours ou semaines. Les pages de catégories sont des liens crawlables ; leur affichage comme sitelinks reste une décision de Google.
+Le nom, l’icône, les titres et les descriptions aident Google à identifier IBASE Asian Pop, mais Google choisit lui-même le texte et les liens affichés et ne garantit pas de résultat en première position ni l’apparition des catégories comme liens secondaires.
 
-CONTENU DU ZIP
---------------
-- index.html : site interactif et accueil optimisés ; les images intégrées ont été externalisées et optimisées.
-- groupes/xlov.html : page XLOV immédiatement lisible, avec membres et lien vers l’application interactive.
-- categories/*.html : pages de catégories indexables avec des liens vers les fiches interactives.
-- robots.txt, sitemap.xml, CNAME, ibase-icon.svg, assets/og-image.png.
-
-Pages des autres groupes : si leurs anciennes pages statiques n’étaient pas incluses dans le fichier reçu, elles s’ouvrent maintenant dans l’application au lieu d’envoyer les visiteurs vers une page inexistante.
+Si tu achètes plus tard ton propre domaine, il faudra le connecter dans les paramètres GitHub Pages et générer à nouveau les balises canonical/sitemap pour ce domaine. Ne réintroduis pas un fichier CNAME avant que le domaine soit réellement enregistré et configuré.
