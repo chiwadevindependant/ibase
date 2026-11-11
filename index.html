@@ -5,26 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 <title>IBASE Asian Pop — Profils K-pop et pop asiatique</title>
-<link rel="icon" type="image/svg+xml" href="ibase-icon.svg">
-<link rel="apple-touch-icon" href="ibase-icon.svg">
+<link rel="icon" type="image/png" sizes="736x736" href="assets/ibase-logo.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="assets/ibase-logo.png">
 <meta name="description" content="IBASE Asian Pop : découvre les groupes K-pop, J-pop, C-pop et T-pop, leurs membres, leurs profils et leurs actualités.">
 <meta name="keywords" content="IBASE, K-pop, J-pop, C-pop, T-pop, groupes coréens, profils artistes asiatiques">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="IBASE">
+<meta property="og:site_name" content="IBASE Asian Pop">
 <meta property="og:title" content="IBASE Asian Pop — Profils K-pop et pop asiatique">
 <meta property="og:description" content="Découvre les groupes K-pop, J-pop, C-pop et T-pop sur IBASE Asian Pop.">
 <link rel="canonical" href="https://ibaseasianpop.github.io/ibase/">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:url" content="https://ibaseasianpop.github.io/ibase/">
-<meta property="og:image" content="https://ibaseasianpop.github.io/ibase/assets/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="https://ibaseasianpop.github.io/ibase/assets/ibase-logo.png">
+<meta property="og:image:width" content="736">
+<meta property="og:image:height" content="736">
 <meta name="theme-color" content="#ff69a8">
-<meta property="og:image:alt" content="IBASE Asian Pop — Profils K-pop et pop asiatique">
+<meta property="og:image:alt" content="Logo IBASE Asian Pop">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="IBASE Asian Pop — Profils K-pop et pop asiatique">
 <meta name="twitter:description" content="Découvre les groupes K-pop, J-pop, C-pop et T-pop sur IBASE Asian Pop.">
-<meta name="twitter:image" content="https://ibaseasianpop.github.io/ibase/assets/og-image.png">
+<meta name="twitter:image" content="https://ibaseasianpop.github.io/ibase/assets/ibase-logo.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,7 +44,7 @@
     "url": "https://ibaseasianpop.github.io/ibase/",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://ibaseasianpop.github.io/ibase/ibase-icon.svg"
+      "url": "https://ibaseasianpop.github.io/ibase/assets/ibase-logo.png"
     }
   },
   "potentialAction": {
@@ -1355,7 +1356,12 @@ footer {
   overflow:hidden;border-radius:12px;background:#080c24}
 .moonbin-mv-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 @media(max-width:600px){.moonbin-tribute-mv{padding:14px}}
-</style>
+
+.logo{display:flex!important;align-items:center;gap:9px;text-decoration:none;color:inherit}
+.logo img{width:46px;height:46px;object-fit:cover;border-radius:50%;flex:0 0 46px}
+.logo span{font-weight:900;white-space:nowrap}
+@media(max-width:520px){.logo img{width:38px;height:38px;flex-basis:38px}.logo span{font-size:14px}}
+
 <style id="xlov-toggle-css">
 /* ====== XLOV : interrupteur i / ! ====== */
 .xlov-toggle-wrap{display:flex;align-items:center;gap:14px;margin:16px 0 8px;padding:12px 14px;border-radius:18px;background:linear-gradient(135deg,rgba(255,216,232,.55),rgba(189,233,201,.5));border:1px solid rgba(255,255,255,.95)}
@@ -1450,7 +1456,7 @@ footer {
 <body>
 
 <header>
-    <div class="logo">✦ <span>IBASE</span></div>
+    <a class="logo" href="index.html" aria-label="IBASE Asian Pop — accueil"><img src="assets/ibase-logo.png" alt="Logo IBASE Asian Pop"><span>IBASE Asian Pop</span></a>
 
     <nav>
         <a href="#home">Home</a>
@@ -9225,7 +9231,7 @@ function socialLine(label, value) {
 }
 
 /* Pages dédiées (SEO) : une URL statique par groupe. Ajouter ici chaque nouvelle page. */
-const STATIC_GROUP_PAGES = {"XLOV": "groupes/xlov.html"};
+const STATIC_GROUP_PAGES = {"BLACKPINK": "groupes/blackpink.html", "XLOV": "groupes/xlov.html", "BTS": "groupes/bts.html", "LE SSERAFIM": "groupes/le-sserafim.html", "ALLDAY PROJECT": "groupes/allday-project.html", "THX": "groupes/thx.html", "TUIDE": "groupes/tuide.html", "KiiiKiii": "groupes/kiiikiii.html", "KATSEYE": "groupes/katseye.html", "UNCHILD": "groupes/unchild.html", "NAMP": "groupes/namp.html", "XG": "groupes/xg.html", "NewJeans": "groupes/newjeans.html", "ATEEZ": "groupes/ateez.html", "NewKin": "groupes/newkin.html", "F5VE": "groupes/f5ve.html", "ILLIT": "groupes/illit.html", "Stray Kids": "groupes/stray-kids.html", "YENA": "groupes/yena.html", "Jackson Wang": "groupes/jackson-wang.html", "Lisa": "groupes/lisa.html", "Jisoo": "groupes/jisoo.html", "Rosé": "groupes/rose.html", "Jennie": "groupes/jennie.html", "BABYMONSTER": "groupes/babymonster.html", "ALD1": "groupes/ald1.html", "CORTIS": "groupes/cortis.html", "AILEE BAND": "groupes/ailee-band.html", "i-dle": "groupes/i-dle.html", "BIGBANG": "groupes/bigbang.html", "AWU": "groupes/awu.html", "KickFlip": "groupes/kickflip.html", "CrazAngel": "groupes/crazangel.html", "FIFTY FIFTY": "groupes/fifty-fifty.html", "SEVENTEEN": "groupes/seventeen.html", "TWICE": "groupes/twice.html", "aespa": "groupes/aespa.html", "ENHYPEN": "groupes/enhypen.html", "EVAN": "groupes/evan.html", "ITZY": "groupes/itzy.html", "PLAVE": "groupes/plave.html", "NiziU": "groupes/niziu.html", "BOYNEXTDOOR": "groupes/boynextdoor.html", "MAMAMOO": "groupes/mamamoo.html", "ALICE SYNDROME": "groupes/alice-syndrome.html", "XD:I": "groupes/xd-i.html", "Hearts2Hearts": "groupes/hearts2hearts.html", "OURBIRTHDAY": "groupes/ourbirthday.html", "BigOcean": "groupes/bigocean.html", "KISS OF LIFE": "groupes/kiss-of-life.html", "YVES": "groupes/yves.html", "Xdinary Heroes": "groupes/xdinary-heroes.html", "KIGURUMI": "groupes/kigurumi.html", "IEOKIT": "groupes/ieokit.html", "DAILY:DIRECTION": "groupes/daily-direction.html", "PROJECT: MAPXY": "groupes/project-mapxy.html", "STARSEED'Z": "groupes/starseed-z.html", "LNGSHOT": "groupes/lngshot.html", "H//PE Princess": "groupes/h-pe-princess.html", "AtHeart": "groupes/atheart.html", "tripleS": "groupes/triples.html", "THE BOYZ": "groupes/the-boyz.html", "DAY6": "groupes/day6.html", "IVE": "groupes/ive.html", "Kiismet": "groupes/kiismet.html", "A2O LITE": "groupes/a2o-lite.html", "JASP.ER": "groupes/jasp-er.html", "BUZZ": "groupes/buzz.html", "Aalia": "groupes/aalia.html", "CODE ZiGU": "groupes/code-zigu.html", "S2IT": "groupes/s2it.html", "eyed": "groupes/eyed.html", "MEOVV": "groupes/meovv.html", "ZEROBASEONE": "groupes/zerobaseone.html", "ASTRO": "groupes/astro.html", "Red Velvet": "groupes/red-velvet.html", "Aooo": "groupes/aooo.html", "ODD YOUTH": "groupes/odd-youth.html", "VAYONN": "groupes/vayonn.html", "zenith": "groupes/zenith.html", "xikers": "groupes/xikers.html", "TWS": "groupes/tws.html", "Re:Hearts": "groupes/re-hearts.html", "RESCENE": "groupes/rescene.html", "IS:SUE": "groupes/is-sue.html", "TXT": "groupes/txt.html", "Hi-Fi Un!corn": "groupes/hi-fi-un-corn.html", "BADVILLAIN": "groupes/badvillain.html", "H1-KEY": "groupes/h1-key.html", "CLOSE YOUR EYES": "groupes/close-your-eyes.html", "RIIZE": "groupes/riize.html", "STAYC": "groupes/stayc.html", "KEYVEATZ": "groupes/keyveatz.html", "JUSTB": "groupes/justb.html", "A I W E O": "groupes/a-i-w-e-o.html", "J-Hope": "groupes/j-hope.html", "Agust D": "groupes/agust-d.html", "Jimin": "groupes/jimin.html", "Jungkook": "groupes/jungkook.html", "HEART OF WOMAN": "groupes/heart-of-woman.html", "izna": "groupes/izna.html", "YOUNG POSSE": "groupes/young-posse.html", "SHINee": "groupes/shinee.html", "UDTT": "groupes/udtt.html", "QWER": "groupes/qwer.html", "Epik High": "groupes/epik-high.html", "EXO": "groupes/exo.html", "GHOST9": "groupes/ghost9.html", "LYKN": "groupes/lykn.html", "dodree": "groupes/dodree.html", "ONE PACT": "groupes/one-pact.html", "BBGIRLS": "groupes/bbgirls.html", "ifeye": "groupes/ifeye.html", "Candy Shop": "groupes/candy-shop.html", "82MAJOR": "groupes/82major.html", "CRAVITY": "groupes/cravity.html", "DAYCHILD": "groupes/daychild.html"};
 function openGroupPage(gi) {
     currentGroupIdx = -1;
     const group = groupsData[gi];
